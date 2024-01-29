@@ -61,6 +61,24 @@ sourceSets {
             include("chapter7/**/*.kt")
             include("chapter8/**/*.kt")
             include("chapter9/**/*.kt")
+            include("chapter10/**/*.kt")
+            include("chapter11/**/*.kt")
+            // include("chapter12/**/*.kt")
+            // include("chapter13/**/*.kt")
+        }
+    }
+    test {
+        kotlin {
+            // many SOLUTION_HERE holes - hence compilation disabled
+            include("chapter1/**/*.kt")
+            // include("chapter2/**/*.kt")
+            // include("chapter3/**/*.kt")
+            // include("chapter4/**/*.kt")
+            // include("chapter5/**/*.kt")
+            // include("chapter6/**/*.kt")
+            // include("chapter7/**/*.kt")
+            // include("chapter8/**/*.kt")
+            // include("chapter9/**/*.kt")
             // include("chapter10/**/*.kt")
             // include("chapter11/**/*.kt")
             // include("chapter12/**/*.kt")
