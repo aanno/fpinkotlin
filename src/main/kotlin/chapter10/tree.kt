@@ -1,6 +1,10 @@
 package chapter10
 
+import arrow.Kind
+import arrow.core.ForOption
 import arrow.higherkind
+
+typealias TreeOf<A> = Kind<ForTree, A>
 
 @higherkind
 sealed class Tree<out A> : TreeOf<A>

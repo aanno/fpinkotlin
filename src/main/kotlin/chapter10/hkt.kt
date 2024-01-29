@@ -2,6 +2,9 @@ package chapter10
 
 import arrow.Kind
 import arrow.Kind2
+import arrow.core.ForListK
+import arrow.core.ListKOf
+import arrow.core.fix
 import arrow.higherkind
 import chapter11.Monad
 

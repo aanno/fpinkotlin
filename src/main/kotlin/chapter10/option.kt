@@ -1,6 +1,10 @@
 package chapter10
 
+import arrow.Kind
+import arrow.core.ForOption
 import arrow.higherkind
+
+typealias OptionOf<A> = Kind<ForOption, A>
 
 @higherkind
 sealed class Option<out A> : OptionOf<A> {
