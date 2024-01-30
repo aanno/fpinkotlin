@@ -7,21 +7,29 @@ java.sourceCompatibility = JavaVersion.VERSION_17
 
 plugins {
     // id("org.jlleitschuh.gradle.ktlint")
+    idea
     kotlin("jvm")
     kotlin("kapt")
 }
 
-val mavenUrl1 by properties
-val mavenUrl2 by properties
+val mavenUrl1: String by properties
+val mavenUrl2: String by properties
 
 repositories {
     // mavenLocal()
     // mavenCentral()
     maven {
-        url = uri(mavenUrl1!!)
+        url = uri(mavenUrl1)
     }
     maven {
-        url = uri(mavenUrl2!!)
+        url = uri(mavenUrl2)
+    }
+}
+
+idea {
+    module {
+        setDownloadJavadoc(true)
+        setDownloadSources(true)
     }
 }
 
