@@ -1,14 +1,14 @@
 package chapter11.sec2
 
 import arrow.Kind
-import chapter11.ForGen
-import chapter11.Gen
+import chapter11.*
 import chapter11.Gen.Companion.unit
-import chapter11.GenOf
-import chapter11.fix
 import chapter11.sec1.Functor
 import chapter4.Option
 import chapter9.Parser
+
+// redefinition for this package is needed (tp)
+typealias StatePartialOf<S> = Kind<ForState, S>
 
 fun <A, B> flatMap(fa: Gen<A>, f: (A) -> Gen<B>): Gen<B> = TODO()
 

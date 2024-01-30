@@ -117,13 +117,6 @@ interface Foldable<F> {
 fun <A> ListOf<A>.fix() = this as List<A>
 //end::init7[]
 
-//tag::init8[]
-@higherkind
-sealed class ListK<out A> : ListKOf<A> {
-    fun <B> foldRight(z: B, f: (A, B) -> B): B = TODO()
-}
-//end::init8[]
-
 //tag::init9[]
 object ListKFoldable : Foldable<ForListK> {
     override fun <A, B> foldRight(

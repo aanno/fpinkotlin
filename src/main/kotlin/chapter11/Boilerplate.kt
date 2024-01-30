@@ -12,9 +12,14 @@ import chapter10.ForList
 import chapter10.List
 import chapter10.ListOf
 import chapter10.fix
+import chapter13.boilerplate.par.ForPar
 import chapter8.RNG
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Future
+
+typealias GenOf<A> = Kind<ForGen,A>
+typealias ParOf<A> = Kind<ForPar,A>
+typealias OptionOf<S> = Kind<ForOption,S>
 
 @higherkind
 data class Gen<A>(val sample: State<RNG, A>) : GenOf<A> {

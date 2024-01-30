@@ -2,6 +2,8 @@ package chapter11.sec5_2
 
 import arrow.core.extensions.list.foldable.foldLeft
 import arrow.higherkind
+import chapter11.StateOf
+import chapter11.StatePartialOf
 import chapter11.sec2.Monad
 
 @higherkind
